@@ -1,0 +1,104 @@
+/* 
+font-family: 'Balsamiq Sans', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Code Pro', monospace;
+*/
+
+/* General settings */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  padding: 3vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header Section */
+
+.header {
+  height: 88vh;
+  background-image: linear-gradient(to right bottom,
+      #ff7b25cc,
+      #feb23677),
+    url(../images/guitar_background_2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+  position: relative;
+}
+
+.navigation {
+  color: white;
+  padding: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 2rem; 
+}
+
+.header-titles {
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-title-main {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.header-title-sub {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* Blog Posts Display */
+
+.intro-text {
+  width: 60vw;
+  margin: 2rem auto;
+  font-size: larger;
+}
+
+.blog-posts {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  flex-basis: 260px;
+  margin: 1vh 1vw;
+  padding: 2vh 2vw;
+  background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
+}
+
+.album-cover {
+  width: 100%;
+  height: auto;
+}
+
+/* Footer Section */
+
+footer {
+  margin-top: 10vh;
+  padding: 10vh 4vw;
+  background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
+}
