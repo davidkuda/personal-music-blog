@@ -45,7 +45,7 @@ a {
 
 nav li {
   display: inline-block;
-  margin: 0 2rem; 
+  margin: 0 1rem; 
 }
 
 .header-titles {
@@ -68,13 +68,45 @@ nav li {
   font-weight: 400;
 }
 
-/* Blog Posts Display */
+/* Intro Text and YouTube embed */
 
-.intro-text {
+.intro-area {
   width: 60vw;
   margin: 2rem auto;
+}
+
+.intro-text {
   font-size: larger;
 }
+
+.intro-text h2,
+.intro-text p {
+  margin-bottom: 1em;
+}
+
+.youtube-title {
+  margin: 1em 0;
+  font-size: 30px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.youtube-title span {
+  display: block;
+}
+
+.video-embed {
+  width: 100%;
+  height: 60vh;
+}
+
+iframe.youtube {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Blog Posts Display */
 
 .blog-posts {
   margin: 0 auto;
