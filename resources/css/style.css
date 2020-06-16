@@ -95,7 +95,22 @@ nav li {
   display: block;
 }
 
-.video-embed {
+.youtube-video-container {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  background-color: beige;
+}
+
+.youtube-embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .video-embed {
   width: 100%;
   height: 60vh;
 }
@@ -103,7 +118,7 @@ nav li {
 iframe.youtube {
   height: 100%;
   width: 100%;
-}
+} */
 
 
 /* Blog Posts Display */
