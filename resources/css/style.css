@@ -1,151 +1,160 @@
-/* 
-font-family: 'Balsamiq Sans', cursive;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Source Code Pro', monospace;
-*/
-
 /* General settings */
 
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: 'Source Code Pro', monospace;
-  font-size: 16px;
-  padding: 3vh;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    padding: 3vh;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
-/* Header Section */
+.grid-main {
+    display: grid;
+    grid-template-rows: 88vh 33vh 88vh 500px 33vh;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "header header"
+        "welcome-text welcome-text"
+        "youtube-embed youtube-embed"
+        "blog-posts sidebar"
+        "footer footer";
+}
+
+/* header section */
+
+.grid-header {
+    grid-area: header;
+    background-color: bisque;
+}
 
 .header {
-  height: 88vh;
-  background-image: linear-gradient(to right bottom,
-      #ff7b25cc,
-      #feb23677),
-    url(../images/guitar_background_2.jpg);
-  background-size: cover;
-  background-position: bottom;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  position: relative;
+    height: 100%;
+    background-image: linear-gradient(to right bottom,
+            #ff7b25cc,
+            #feb23677),
+        url(../images/guitar_background_2.jpg);
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    position: relative;
 }
 
 .navigation {
-  color: white;
-  padding: 2rem;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+    color: white;
+    padding: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 nav li {
-  display: inline-block;
-  margin: 0 1rem; 
+    display: inline-block;
+    margin: 0 1.5rem;
+}
+
+.navigation a {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .header-titles {
-  text-transform: uppercase;
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .header-title-main {
-  font-size: 40px;
-  font-weight: 200;
+    font-size: 40px;
+    font-weight: 200;
 }
 
 .header-title-sub {
-  font-size: 28px;
-  font-weight: 400;
+    font-size: 28px;
+    font-weight: 400;
 }
 
-/* Intro Text and YouTube embed */
 
-.intro-area {
-  width: 60vw;
-  margin: 2rem auto;
+/* welcome text section */
+
+.grid-welcome-text {
+    grid-area: welcome-text;
+    background-color: royalblue;
 }
 
-.intro-text {
-  font-size: larger;
-}
+/* youtube embed section */
 
-.intro-text h2,
-.intro-text p {
-  margin-bottom: 1em;
+.grid-youtube-embed {
+    grid-area: youtube-embed;
+    background-color: bisque;
 }
 
 .youtube-title {
-  margin: 1em 0;
-  font-size: 30px;
-  font-weight: 200;
-  text-transform: uppercase;
+    margin: 1em 0;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
 }
 
 .youtube-title span {
-  display: block;
+    display: block;
 }
 
-.youtube-video-container {
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%;
-  background-color: beige;
+.youtube-video-container {}
+
+.youtube-embed {}
+
+/* blog bost sections */
+
+.grid-blog-posts {
+    grid-area: blog-posts;
+    background-color: royalblue;
+    display: flex;
 }
-
-.youtube-embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* .video-embed {
-  width: 100%;
-  height: 60vh;
-}
-
-iframe.youtube {
-  height: 100%;
-  width: 100%;
-} */
-
-
-/* Blog Posts Display */
 
 .blog-posts {
-  margin: 0 auto;
-  width: 80vw;
-  display: flex;
-  flex-flow: row wrap;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .card {
-  flex-basis: 260px;
-  margin: 1vh 1vw;
-  padding: 2vh 2vw;
-  background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
+    flex-basis: 260px;
+    margin: 1vh 1vw;
+    padding: 2vh 2vw;
+    background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
 }
 
 .album-cover {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
-/* Footer Section */
+/* sidebar section */
+
+.grid-sidebar {
+    grid-area: sidebar;
+    background-color: salmon;
+}
+
+/* footer section */
+
+.grid-footer {
+    grid-area: footer;
+}
 
 footer {
-  margin-top: 10vh;
-  padding: 10vh 4vw;
-  background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
+    height: 100%;
+    background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
 }
