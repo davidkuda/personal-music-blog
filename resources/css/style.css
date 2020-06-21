@@ -17,7 +17,7 @@ a {
 
 .grid-main {
     display: grid;
-    grid-template-rows: 88vh 33vh 88vh 500px 33vh;
+    grid-template-rows: 88vh 33vh 88vh max-content 33vh;
     grid-template-columns: 80% 20%;
     grid-gap: 1rem;
     grid-template-areas:
@@ -121,6 +121,8 @@ nav li {
     grid-area: blog-posts;
     background-color: royalblue;
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
 }
 
 .blog-posts {
@@ -130,7 +132,7 @@ nav li {
 }
 
 .card {
-    flex-basis: 260px;
+    flex-basis: 400px;
     margin: 1vh 1vw;
     padding: 2vh 2vw;
     background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
