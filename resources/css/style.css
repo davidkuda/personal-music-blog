@@ -8,7 +8,7 @@
 body {
     font-family: 'Source Code Pro', monospace;
     font-size: 16px;
-    padding: 3vh;
+    padding: 1em;
 }
 
 a {
@@ -17,14 +17,13 @@ a {
 
 .grid-main {
     display: grid;
-    grid-template-rows: 88vh 33vh 88vh max-content 33vh;
-    grid-template-columns: 80% 20%;
+    grid-template-rows: 88vh 44vh max-content 33vh;
+    grid-template-columns: 60% 40%;
     grid-gap: 1rem;
     grid-template-areas:
         "header header"
-        "welcome-text welcome-text"
-        "youtube-embed youtube-embed"
-        "blog-posts sidebar"
+        "welcome-text sidebar"
+        "blog-posts blog-posts"
         "footer footer";
 }
 
@@ -32,7 +31,7 @@ a {
 
 .grid-header {
     grid-area: header;
-    background-color: bisque;
+    background-color: #E6E6FA;
 }
 
 .header {
@@ -58,6 +57,11 @@ a {
 nav li {
     display: inline-block;
     margin: 0 1.5rem;
+}
+
+nav li:hover {
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .navigation a {
@@ -90,36 +94,32 @@ nav li {
 
 .grid-welcome-text {
     grid-area: welcome-text;
-    background-color: royalblue;
+    background-color: #E6E6FA;
 }
 
-/* youtube embed section */
-
-.grid-youtube-embed {
-    grid-area: youtube-embed;
-    background-color: bisque;
+.welcome-text {
+    text-align: center;
+    margin: 2em;
 }
 
-.youtube-title {
-    margin: 1em 0;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
+
+/* sidebar section */
+
+.grid-sidebar {
+    grid-area: sidebar;
+    background-color: #E6E6FA;
 }
 
-.youtube-title span {
-    display: block;
+.sidebar {
+    margin: 2em;
 }
 
-.youtube-video-container {}
-
-.youtube-embed {}
 
 /* blog bost sections */
 
 .grid-blog-posts {
     grid-area: blog-posts;
-    background-color: royalblue;
+    background-color: #E6E6FA;
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -132,10 +132,10 @@ nav li {
 }
 
 .card {
-    flex-basis: 400px;
-    margin: 1vh 1vw;
-    padding: 2vh 2vw;
-    background: linear-gradient(to right bottom, #ff7b25cc, #feb236cc);
+    flex-basis: 40%;
+    margin: 1em;
+    padding: 1em;
+    background-color: white;
 }
 
 .album-cover {
@@ -143,12 +143,6 @@ nav li {
     height: auto;
 }
 
-/* sidebar section */
-
-.grid-sidebar {
-    grid-area: sidebar;
-    background-color: salmon;
-}
 
 /* footer section */
 
