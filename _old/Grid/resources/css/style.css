@@ -1,0 +1,54 @@
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  background-color: #444;
+  color: #fffff8;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.gridcontainer {
+  margin: 0;
+  border: medium dashed darkred;
+  width: 100%;
+  display: grid;
+  grid-gap: 1vw;
+  /* reapeat(x, y) => x: num of times y is going to repeat; y: unit to which cols get divided. fr: "fraction of the available space in the grid container" */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20vh 60vh 20vh;
+  grid-template-areas: 
+  "hd hd hd"
+  "mn mn side"
+  "ft ft ft"
+  ;
+}
+
+.box {
+  border: thin solid #fffff8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.main {
+  grid-area: mn;
+  /* grid-auto-rows: sets minimum height to 100px and maximum height to 100, which means that it'll adjust according to the content's actual height.  */
+  /* in other words: "generate the number of rows based on the content and available space." */
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.side {
+  grid-area: side;
+}
+.hd {
+  grid-area: hd;
+}
