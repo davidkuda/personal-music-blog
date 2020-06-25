@@ -1,0 +1,73 @@
+/* imports */
+
+@import "general_style.css";
+@import "welcome_text_style.css";
+@import "sidebar_style.css";
+@import "footer_style.css";
+
+
+/* grid container settings */
+
+.grid-main {
+    display: grid;
+    grid-template-rows: 10vh 22vh max-content 33vh 33vh;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0.2rem;
+    grid-template-areas: "header header"
+    "welcome-text sidebar"
+    "blog-post blog-post"
+    "author-info recent-posts"
+    "footer footer";
+}
+
+/* header section */
+
+.grid-header {
+    grid-area: header;
+}
+
+.header {
+    background: linear-gradient(to right bottom, #b0bec5, #455a64);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.navigation {
+    color: white;
+    padding: 2rem;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav li:hover {
+    font-weight: bolder;
+}
+
+.navigation a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* blog post */
+
+.grid-blog-post {
+    grid-area: blog-post;
+    background-color: #fff;
+}
+
+
+/* author info */
+
+.grid-author-info {
+    grid-area: author-info;
+}
+
+/* recent posts */
+
+.grid-recent-posts {
+    grid-area: recent-posts;
+}

@@ -1,0 +1,14 @@
+/* welcome text section */
+
+.grid-welcome-text {
+    grid-area: welcome-text;
+    align-self: center;
+    justify-self: center;
+    background-color: #fff;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 17%);
+}
+
+.welcome-text {
+    text-align: center;
+    margin: 2em;
+}

@@ -1,28 +1,12 @@
-/* General settings */
+/* imports */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import "general_style.css";
+@import "welcome_text_style.css";
+@import "sidebar_style.css";
+@import "footer_style.css";
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
-body {
-    font-family: 'Quicksand', sans-serif;
-    /* font-family: 'Source Code Pro', monospace; */
-    font-size: 16px;
-    padding: 1em;
-    background-color: #eceff1;
-}
-
-p {
-    margin: 1.2em 0;
-}
-
-a {
-    color: #263238;
-    text-decoration: none;
-}
+/* grid container settings */
 
 .grid-main {
     display: grid;
@@ -40,7 +24,6 @@ a {
 
 .grid-header {
     grid-area: header;
-    /* background-color: #E6E6FA; */
 }
 
 .header {
@@ -98,46 +81,7 @@ nav li:hover {
 }
 
 
-/* welcome text section */
-
-.grid-welcome-text {
-    grid-area: welcome-text;
-    align-self: center;
-    justify-self: center;
-    background-color:#fff;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 17%);
-}
-
-.welcome-text {
-    text-align: center;
-    margin: 2em;
-}
-
-
-/* sidebar section */
-
-.grid-sidebar {
-    grid-area: sidebar;
-    align-self: center;
-    justify-self: center;
-    background-color: #fff;
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 17%);
-}
-
-.sidebar {
-    margin: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar h2 {
-    margin-bottom: 1em;
-}
-
-
-/* blog bost sections */
+/* blog post cards sections */
 
 .grid-blog-posts {
     grid-area: blog-posts;
@@ -177,23 +121,4 @@ figcaption {
 .album-cover {
     width: 100%;
     height: auto;
-}
-
-
-/* footer section */
-
-.grid-footer {
-    grid-area: footer;
-    background: linear-gradient(to right bottom, #b0bec5, #455a64);
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: #eceff1;
-    font-size: large;
-
-}
-
-footer {
-    margin-top: 4em;
-    text-align: center;
 }

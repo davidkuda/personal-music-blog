@@ -1,0 +1,21 @@
+/* sidebar section */
+
+.grid-sidebar {
+    grid-area: sidebar;
+    align-self: center;
+    justify-self: center;
+    background-color: #fff;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 17%);
+}
+
+.sidebar {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar h2 {
+    margin-bottom: 1em;
+}

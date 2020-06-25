@@ -1,0 +1,17 @@
+/* footer section */
+
+.grid-footer {
+    grid-area: footer;
+    background: linear-gradient(to right bottom, #b0bec5, #455a64);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #eceff1;
+    font-size: large;
+
+}
+
+footer {
+    margin-top: 4em;
+    text-align: center;
+}
