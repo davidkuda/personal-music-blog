@@ -1,0 +1,16 @@
+@media only screen and (max-width: 813px) {
+    
+    body {
+        font-size: 30px;
+    }
+
+}
+
+/* Anything smaller than first breakpoint 600px */
+@media (max-width: 670px) {}
+
+/* Medium Screens */
+@media (min-width: 671px) and (max-width:900px) {}
+
+/* Large Screens */
+@media (min-width:901px) {}
