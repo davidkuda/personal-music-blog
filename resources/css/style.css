@@ -1,16 +1,17 @@
 /* imports */
 
-@import "general_style.css";
-@import "welcome_text_style.css";
-@import "sidebar_style.css";
-@import "footer_style.css";
+@import "components/header_style.css";
+@import "components/general_style.css";
+@import "components/welcome_text_style.css";
+@import "components/sidebar_style.css";
+@import "components/footer_style.css";
 
 
 /* grid container settings */
 
 .grid-main {
     display: grid;
-    grid-template-rows: 88vh 34vh max-content 33vh;
+    grid-template-rows: 88vh 34vh max-content min-content;
     grid-template-columns: 60% 40%;
     grid-gap: 0.2rem;
     grid-template-areas:
@@ -20,66 +21,21 @@
         "footer footer";
 }
 
-/* header section */
+@media(max-width:900px) {
 
-.grid-header {
-    grid-area: header;
+    .grid-main {
+        display: grid;
+        grid-template-rows: 80vh min-content min-content min-content max-content;
+        grid-template-columns: 100%;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+            "header"
+            "welcome-text"
+            "sidebar"
+            "blog-posts"
+            "footer";
+    }
 }
-
-.header {
-    height: 100%;
-    background-image: linear-gradient(to right bottom,
-            #455a64ee,
-            #b0bec5aa),
-        url(../images/guitar_background_2.jpg);
-    background-size: cover;
-    background-position: bottom;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-    position: relative;
-}
-
-.navigation {
-    color: white;
-    padding: 2rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav li:hover {
-    font-weight: bolder;
-}
-
-.navigation a {
-    color: white;
-    font-size: 1.5rem;
-}
-
-.header-titles {
-    text-transform: uppercase;
-    color: #fff;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.header-title-main {
-    font-size: 40px;
-    font-weight: 200;
-}
-
-.header-title-sub {
-    font-size: 28px;
-    font-weight: 400;
-}
-
 
 /* blog post cards sections */
 
@@ -121,4 +77,11 @@ figcaption {
 .album-cover {
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 780px) {
+    .card {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
 }

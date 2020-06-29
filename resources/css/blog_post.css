@@ -1,17 +1,17 @@
 /* imports */
 
-@import "general_style.css";
-@import "welcome_text_style.css";
-@import "sidebar_style.css";
-@import "footer_style.css";
-@import "media_queries.css";
+@import "components/header_style.css";
+@import "components/general_style.css";
+@import "components/welcome_text_style.css";
+@import "components/sidebar_style.css";
+@import "components/footer_style.css";
 
 
 /* grid container settings */
 
 .grid-main {
     display: grid;
-    grid-template-rows: 30vh max-content max-content min-content min-content;
+    grid-template-rows: 80vh max-content max-content min-content min-content;
     grid-template-columns: 60% 40%;
     grid-gap: 0.2rem;
     grid-template-areas: 
@@ -22,36 +22,24 @@
         "footer footer";
 }
 
-/* header section */
+/* grid breakpoints */
 
-.grid-header {
-    grid-area: header;
-}
+@media(max-width:900px) {
 
-.header {
-    background: linear-gradient(to right bottom, #b0bec5, #455a64);
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.navigation {
-    color: white;
-    padding: 2rem;
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav li:hover {
-    font-weight: bolder;
-}
-
-.navigation a {
-    color: white;
-    font-size: 1.5rem;
+    .grid-main {
+        display: grid;
+        grid-template-rows: 80vh min-content min-content min-content min-content 33vh;
+        grid-template-columns: 100%;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+            "header"
+            "welcome-text"
+            "sidebar"
+            "blog-post"
+            "author-info"
+            "recent-posts"
+            "footer";
+    }
 }
 
 /* blog post */
@@ -98,26 +86,3 @@ nav li:hover {
     padding: 2em;
 }
 
-/* breakpoints */
-
-@media(max-width:670px) {
-
-    body {
-        font-size: 30px;
-    }
-
-    .grid-main {
-        display: grid;
-        grid-template-rows: min-content min-content min-content max-content max-content 33vh;
-        grid-template-columns: 100%;
-        grid-gap: 0.2rem;
-        grid-template-areas:
-            "header"
-            "welcome-text"
-            "sidebar"
-            "blog-post"
-            "author-info"
-            "footer";
-    }
-
-}
