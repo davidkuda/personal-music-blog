@@ -10,7 +10,7 @@
 
 .grid-main {
     display: grid;
-    grid-template-rows: 50vh 22vh max-content 33vh 33vh;
+    grid-template-rows: 30vh max-content max-content 33vh 33vh;
     grid-template-columns: 60% 40%;
     grid-gap: 0.2rem;
     grid-template-areas: 
@@ -72,6 +72,19 @@ nav li:hover {
 .grid-author-info {
     grid-area: author-info;
     background-color: #fff;
+    padding: 2em;
+    display: flex;
+
+}
+
+.author-img {
+    height: 100%;
+    border-radius: 100%;
+    margin: 0 1em;
+}
+
+.author-title-text {
+    display: block;
 }
 
 /* recent posts */
@@ -79,4 +92,5 @@ nav li:hover {
 .grid-recent-posts {
     grid-area: recent-posts;
     background-color: #fff;
+    padding: 2em;
 }
