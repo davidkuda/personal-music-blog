@@ -14,7 +14,7 @@
     grid-template-rows: 80vh max-content max-content min-content min-content;
     grid-template-columns: 60% 40%;
     grid-gap: 0.2rem;
-    grid-template-areas: 
+    grid-template-areas:
         "header header"
         "welcome-text sidebar"
         "blog-post blog-post"
@@ -85,4 +85,3 @@
     background-color: #fff;
     padding: 2em;
 }
-
