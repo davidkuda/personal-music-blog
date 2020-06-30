@@ -43,6 +43,32 @@
     }
 }
 
+@media(max-width:350px) {
+
+    .grid-main {
+        display: grid;
+        grid-template-rows: 80vh 0 0 min-content min-content 33vh;
+        grid-template-columns: 100%;
+        grid-gap: 0.2rem;
+        grid-template-areas:
+            "header"
+            "welcome-text"
+            "sidebar"
+            "blog-post"
+            "author-info"
+            "recent-posts"
+            "footer";
+    }
+
+    .grid-welcome-text {
+        display: none;
+    }
+
+    .grid-sidebar {
+        display: none;
+    }
+}
+
 /* blog post */
 
 .grid-blog-post {
@@ -58,12 +84,11 @@
 }
 
 .quote {
-    background-color: #78909c;
-    color: #fff;
+    background-color: #eceff1;
     border-radius: 1em;
-    padding: 0.2em 1em;
-    margin-left: 2em;
-    margin-right: 1em;
+    padding: 0.2em 0.5em;
+    margin-left: 1.2em;
+    margin-right: 0;
     margin-bottom: 1em;
 }
 

@@ -48,21 +48,10 @@ a {
 }
 
 /* media queries // breakpoints */
-/* 
-@media (min-width: 600px) {
-    body {
-        font-size: 22px;
-    }
-}
 
-@media (min-width: 900px) {
+@media(max-width:350px) {
     body {
-        font-size: 18px;
+        font-size: 14px;
     }
-}
 
-@media (min-width: 1200px) {
-    body {
-        font-size: 16px;
-    }
-} */
+}

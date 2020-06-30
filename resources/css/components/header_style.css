@@ -72,6 +72,7 @@ nav li:hover {
         transform: translate(0, 0);
         width: 100%;
         margin: 0;
+        margin-top: 1em;
     }
 
     .navigation ul {
@@ -85,7 +86,8 @@ nav li:hover {
     }
 
     .header-title-sub {
-        display: none;
+        font-size: 1rem;
+        /* display: none; */
     }
 
     .header-title-main {

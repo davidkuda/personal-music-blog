@@ -12,3 +12,9 @@
     text-align: center;
     margin: 2em;
 }
+
+@media (max-width: 600px) {
+    .grid-welcome-text {
+        clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    }
+}
