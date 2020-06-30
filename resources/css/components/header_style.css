@@ -58,12 +58,45 @@ nav li:hover {
     font-weight: 400;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
 
     nav li {
-        display: block;
+        display: inline;
         margin: 0 0.2rem;
     }
+
+    .navigation {
+        padding: 0;
+        position: absolute;
+        left: 0;
+        transform: translate(0, 0);
+        width: 100%;
+        margin: 0;
+    }
+
+    .navigation ul {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .navigation a {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .header-title-sub {
+        display: none;
+    }
+
+    .header-title-main {
+        font-size: 1.2rem;
+        font-weight: 200;
+    }
+
+}
+
+@media (min-width: 601) and (max-width: 900px) {
+
 
     .navigation a {
         color: white;
@@ -78,5 +111,9 @@ nav li:hover {
     .header-title-sub {
         font-size: 24px;
         font-weight: 400;
+    }
+
+    .header-title-sub {
+        display: none;
     }
 }

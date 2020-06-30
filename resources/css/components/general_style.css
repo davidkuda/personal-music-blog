@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     padding: 1em;
     background-color: #eceff1;
 }
@@ -22,3 +22,47 @@ a {
     color: #263238;
     text-decoration: none;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+/* button */
+
+.button-container {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+.button {
+    background-color: #78909c;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.8em 2em;
+    border-radius: 1em;
+}
+
+.button:hover {
+    background-color: #607d8b;
+}
+
+/* media queries // breakpoints */
+/* 
+@media (min-width: 600px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 16px;
+    }
+} */

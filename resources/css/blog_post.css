@@ -5,6 +5,7 @@
 @import "components/welcome_text_style.css";
 @import "components/sidebar_style.css";
 @import "components/footer_style.css";
+@import "components/youtube-embed-style.css";
 
 
 /* grid container settings */
@@ -54,6 +55,21 @@
 
 .post-img {
     width: 100%;
+}
+
+.quote {
+    background-color: #78909c;
+    color: #fff;
+    border-radius: 1em;
+    padding: 0.2em 1em;
+    margin-left: 2em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.link-highlight {
+    font-style: italic;
+    text-decoration: underline;
 }
 
 /* author info */
