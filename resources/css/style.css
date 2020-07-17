@@ -59,6 +59,7 @@
     padding: 1em;
     background-color: white;
     border-radius: 0.5em;
+    box-shadow: 0 2px 4px #0000004D;
 }
 
 .genre {
