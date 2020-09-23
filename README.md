@@ -6,4 +6,4 @@ Please visit the link below to see the page:
 
 https://davidkuda.github.io/personal-music-blog/
 
-![Screen capture of the website](https://github.com/DavidKuda/vanilla-js-landingpage/blob/master/docs/landingpage-screen-gif.gif)
+![Screen capture of the website](https://github.com/DavidKuda/personal-music-blog/blob/master/docs/music-blog-gif.gif)
